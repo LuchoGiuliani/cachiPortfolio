@@ -4,13 +4,15 @@ import { projects } from "../constants";
 function Projects() {
   return (
     
-      <div className=" bg-[#090409]">
+      <div className="bg_projects bg-[#090409]">
         <div className="flex items-center justify-center p-6">
           
         /* <img className="" src="/projects-title2.png" alt="" /> */
         </div>
-        <section className=" ">
-          <div className=" flex flex-col pt-6  items-center bg-slate-200  p-3 bloque">
+        <section className="relative ">
+          <img src="/popCorn.png" alt="popCorn" className="popCorn absolute top-16 left-16 animate__animated animate__bounce" />
+         
+          <div className="  flex flex-col pt-6  items-center bg-slate-200  p-3 bloque">
             <iframe
               className="youtube_bloque"
               width="60%"
@@ -27,7 +29,9 @@ function Projects() {
             </p>
           </div>
         </section>
-        <section className="">
+        <section className="relative">
+       
+          <img src="/popCorn.png" alt="popCorn" className="popCorn absolute bottom-16 right-16 animate__animated animate__bounce" />
           <div className="bloque flex flex-col gap-4 items-center z-50 bg-yellow-200  p-6">
             <iframe
               className="youtube_bloque"
@@ -42,7 +46,9 @@ function Projects() {
             </p>
           </div>
         </section>
-        <section className=" ">
+        <section className="relative ">
+        <img src="/popCorn.png" alt="popCorn" className="popCorn absolute top-16 left-16 animate__animated animate__bounce" />
+          
           <div className="bloque flex flex-col gap-4 items-center bg-[#292d3e]  p-3">
             <iframe
                className="youtube_bloque"
@@ -57,7 +63,9 @@ function Projects() {
             </p>
           </div>
         </section>
-        <section className="">
+        <section className="relative">
+        
+          <img src="/popCorn.png" alt="popCorn" className="popCorn absolute bottom-16 right-16 animate__animated animate__bounce" />
           <div className="bloque flex flex-col gap-4 items-center bg-[#17152d]  p-3">
             <iframe
                className="youtube_bloque"
@@ -72,7 +80,9 @@ function Projects() {
             </p>
           </div>
         </section>
-        <section className="">
+        <section className="relative ">
+        <img src="/popCorn.png" alt="popCorn" className="popCorn absolute top-16 left-16 animate__animated animate__bounce animate__slower animate__repeat-2" />
+         
           <div className="bloque flex flex-col gap-4 items-center bg-[#c74458]  p-3">
             <iframe
               className="youtube_bloque"

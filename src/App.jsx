@@ -14,12 +14,11 @@ function App() {
 
   return (
     <main className="App bg-[#090409] h-[100vw] w-full ">
-      {/* <TVNoise className="h-[100%] " /> */}
       <Navbar />
       <Hero />
       <Projects className="" />
-      {/* <Fotos />  */}
-      {/* <Footer /> */}
+      <Fotos /> 
+      <Footer />
     </main>
   )
 }

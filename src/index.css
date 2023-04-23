@@ -9,59 +9,15 @@
 h1 {
   font-family: "Roboto", sans-serif;
 }
-canvas {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  left: 0;
-  top: 0;
-  opacity: 0.08;
-  z-index: 40;
-}
 
-.bg-hero {
-  background-image: url("../public/bg-hero.jpg");
-}
 
-.carousel-container {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-}
 
-.carousel-container p {
-  font-family: "Anton", sans-serif;
-  font-size: 24px;
-  display: inline-block;
-  margin: 0;
-  padding-right: 100%;
-  animation: marquee 30s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
+@media (max-width: 868px) { 
+  .popCorn {
+    display: none
   }
 }
 
-@media (min-width: 768px) {
-  .carousel-container p {
-    font-family: "Anton", sans-serif;
-    font-size: 64px;
-    display: inline-block;
-    margin: 0;
-    padding-right: 100%;
-    animation: marquee 30s linear infinite;
-  }
-}
-
-section {
-  background-image: url("./bg-hero.jpg");
-  background-size: cover;
-}
 
 .youtube_bloque {
   border-radius: 2%;
@@ -79,5 +35,4 @@ section {
 .eye:hover {
   background: rgb(18, 72, 58);
   border-radius: 50%;
-  
 }
