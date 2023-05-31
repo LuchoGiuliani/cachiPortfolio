@@ -3,14 +3,10 @@ import videoHero from "../assets/reel.mp4";
 
 function Hero() {
   return (
-    <div className="bg-[#0a050b]  mb-10">
-      <video
-        className="pt-[96px] sm:pt-[30px]"
-        src={videoHero}
-        autoPlay
-        loop
-        muted
-      />
+    <div className=" flex justify-center items-center sm:h-screen hero p-12">
+      <div className="max-w-[1260px]  rounded-lg p-1 bg-[#4A6D69] bloq_color  ">
+        <video className=" rounded-lg  " src={videoHero} autoPlay loop muted />
+      </div>
     </div>
   );
 }
