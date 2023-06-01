@@ -36,14 +36,8 @@ function Footer() {
   }, []);
 
   return (
-    <div className="flex gap-2 justify-between items-center p-6  w-full z-[60]  max-h-[10px] sm:max-h-[100px] bg-black ">
-      {/* <div className="flex gap-2 items-center w-6 sm:w-full">
-        <a className="eye" href="#">
-          {" "}
-          <img className="eye" src="./eye.png" alt="INICIO" />
-        </a>
-      </div> */}
-      <div className="flex gap-2 px-16 ">
+   
+      <div className="flex p-3">
         <h2 className="text-white lg:w-[368px] font-bold navbar-text text-[14px] sm:text-xs">
           CARLA <span className="text-[#136968] font-bold">GIULIANI</span> |{" "}
           <span className="underline underline-offset-8"> {text}</span>
@@ -68,7 +62,7 @@ function Footer() {
           }}
         />
       </div>
-    </div>
+   
   );
 }
 

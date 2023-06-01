@@ -19,7 +19,7 @@ function Projects() {
         infiniteLoop={true}
         centerMode={false}
         dynamicHeight={true}
-        autoPlay={true}
+    
         renderIndicator={(onClickHandler, isSelected, index, label) => {
           if (isSelected) {
             return (
@@ -47,9 +47,12 @@ function Projects() {
       >
         {projects.map((project, index) => (
           <motion.div
-            className={`${project.className} justify-center items-center`}
+            className={`${project.className} justify-center items-center gap-2`}
             key={index}
           >
+            <div className="bg-[#d8cece] w-[256px] max-h-[256px] rounded-xl p-1">
+              <p className="text-[#312b2b] text-center truncate ">{project.description}</p>
+            </div>
             <iframe
               className="rounded-xl w-[360px] sm:max-w-[660px] h-[360px] sm:h-[440px]"
               width="100%"
@@ -57,9 +60,6 @@ function Projects() {
               src={project.src}
               title={project.title}
             ></iframe>
-            <div className="bg-[#d8cece] w-[256px] max-h-[256px] rounded-xl p-1">
-              <p className="text-[#312b2b] text-center truncate ">{project.description}</p>
-            </div>
           </motion.div>
         ))}
       </Carousel>
