@@ -7,7 +7,7 @@ export const projects = [
     className: "flex flex-col  p-12  bg-slate-200   bloque",
     title: "EL CORTE (Blackout) (Trailer)",
     src: "https://www.youtube.com/embed/w4MdYkGZ0jk",
-    description:"El Corte - Largometraje Ficción [Edición - Continuidad - 2018] Proyecto realizado durante el año 2014/2015 y estrenado en mayo de 2018 en Cine Gaumont. Actualmente disponible en CINE.AR"
+    description:"El Corte - Largometraje Ficción [Edición - Continuidad - 2018] "
   },
   {
     id: "2",

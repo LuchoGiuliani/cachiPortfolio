@@ -2,16 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.App {
+  background: rgb(30,13,31);
+  background: linear-gradient(180deg, rgba(30,13,31,1) 10%, rgba(0,0,0,1) 90%);
+}
+
 * {
   scroll-behavior: smooth;
-}
-.slick-dots li button:before {
-  color: white; /* Cambia el color a blanco */
 }
 
 h1 {
   font-family: "Roboto", sans-serif;
 }
+
+.loading_page {
+  background: rgb(30,13,31);
+  background: linear-gradient(180deg, rgba(30,13,31,1) 10%, rgba(0,0,0,1) 90%);
+
+}
+
+
 
 .hiddenn {
   opacity: 0;
@@ -39,7 +50,19 @@ h1 {
 
 .bloq_color {
   animation: colorChange 6s linear infinite;
+  transform: skew(-3deg,-2deg);
 }
+
+.loader_image {
+  
+  width: 260px;
+  height: 260px;
+  /* opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards; */
+}
+
+
+
 
 @keyframes colorChange {
   0% {
@@ -97,3 +120,5 @@ h1 {
 .bg_projects {
   height: 50%;
 }
+
+

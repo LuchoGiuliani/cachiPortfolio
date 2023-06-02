@@ -10,6 +10,7 @@ function Projects() {
 
   return (
     <div id="projects" className="bg_projects  ">
+      <div></div>
       <Carousel
         prevArrow={customPrevArrow}
         nextArrow={customNextArrow}
@@ -47,16 +48,16 @@ function Projects() {
       >
         {projects.map((project, index) => (
           <motion.div
-            className={`${project.className} justify-center items-center gap-2`}
+            className={`${project.className} relative justify-center items-center gap-2`}
             key={index}
           >
-            <div className="bg-[#d8cece] w-[256px] max-h-[256px] rounded-xl p-1">
-              <p className="text-[#312b2b] text-center truncate ">{project.description}</p>
+            <div className=" w-[356px]  rounded-xl pt-1 p-2 mb-4  top-12 left-12">
+              <p className="text-[#1d1021]  sm:tracking-wide font-bold	  ">{project.description}</p>
             </div>
             <iframe
-              className="rounded-xl w-[360px] sm:max-w-[660px] h-[360px] sm:h-[440px]"
+              className="rounded-xl w-[360px] sm:max-w-[660px] h-[260px] sm:h-[440px]"
               width="100%"
-              height="100%"
+              
               src={project.src}
               title={project.title}
             ></iframe>

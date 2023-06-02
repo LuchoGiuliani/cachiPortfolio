@@ -8,10 +8,24 @@ import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Fotos from './components/Fotos';
 import Links from './components/Links';
+import GridVideo from './components/GridVideo';
+import Loader from './components/Loader';
 
 
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
+  if (loading) {
+    return <Loader onLoad={() => setLoading(false)} />;
+  }
 
  
  
@@ -22,7 +36,9 @@ function App() {
       <Navbar className= "" />
       <Hero className="" />
       <Projects id="projects" className="" />
+      <GridVideo className="" />
       {/* <Fotos /> */}
+     
       <Footer />
      
     </main>
