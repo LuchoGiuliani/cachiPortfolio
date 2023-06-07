@@ -45,9 +45,10 @@ function Navbar() {
       className="flex   justify-center items-center  w-full z-[60] opacity-80 max-h-[10px] sm:max-h-[100px] pt-12 "
       // style={{ backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.1)" : "black" }}
     >
-      <div className="flex fixed gap-2 justify-center  items-center w-[240px] sm:w-full hiddenn">
+      <div className="flex  gap-2 justify-center  items-center w-[240px] sm:w-full hiddenn ">
         <a className="eye  " href="#">
-          <img className="eye hiddenn " src="./cachi.png" alt="INICIO" />
+         
+          <img className="eye hiddenn max-w-[428px] " src="./cachi.png" alt="INICIO" />
         </a>
       </div>
       <div className="flex gap-2 ">

@@ -5,8 +5,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { motion } from "framer-motion";
 
 function Projects() {
+
+  
   const customPrevArrow = <div className="prev-arrow" style={{ color: 'red' }}>Prev</div>;
   const customNextArrow = <div className="next-arrow" style={{ color: 'red' }}>Next</div>;
+
+
 
   return (
     <div id="projects" className="bg_projects  ">
@@ -48,11 +52,11 @@ function Projects() {
       >
         {projects.map((project, index) => (
           <motion.div
-            className={`${project.className} relative justify-center items-center gap-2`}
+            className={`${project.className} pb-8 relative justify-center items-center gap-2`}
             key={index}
           >
             <div className=" w-[356px]  rounded-xl pt-1 p-2 mb-4  top-12 left-12">
-              <p className="text-[#1d1021]  sm:tracking-wide font-bold	  ">{project.description}</p>
+              <p className="text-[#1d1021]  sm:tracking-wide font-bold parrafo	  ">{project.description}</p>
             </div>
             <iframe
               className="rounded-xl w-[360px] sm:max-w-[660px] h-[260px] sm:h-[440px]"
