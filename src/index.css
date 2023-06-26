@@ -65,6 +65,7 @@ h1 {
 
   gap: 16px;
   padding: 16px;
+
 }
 
 @media (max-width: 768px) {
@@ -77,14 +78,33 @@ h1 {
     object-fit: cover;
   }
 }
+
+.grid_link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hover_text {
+  color: transparent;
+  transition: color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid_link:hover .hover_text {
+  color: white;
+}
+
 .grid_image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.grid_link {
-  position: relative;
-}
+
 
 .hover_image {
   position: absolute;
