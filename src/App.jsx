@@ -10,6 +10,7 @@ import Fotos from './components/Fotos';
 import Links from './components/Links';
 import GridVideo from './components/GridVideo';
 import Loader from './components/Loader';
+import AboutMe from './components/AboutMe';
 
 
 
@@ -31,13 +32,14 @@ function App() {
  
 
   return (
-    <main className="App bg-[#090409]  ">
+    <main className="App  ">
       <Links  className=""/>
       <Navbar className= "" />
       <Hero className="" />
       <GridVideo className="" />
+      <AboutMe />
       <Projects id="projects" className="" />
-      <Footer />
+      <Footer className="" />
       {/* <Fotos /> */}
      
      

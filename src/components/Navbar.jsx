@@ -42,13 +42,13 @@ function Navbar() {
 
   return (
     <div
-      className="flex   justify-center items-center  w-full z-[60] opacity-80 max-h-[10px] sm:max-h-[100px] pt-12 "
+      className="flex   justify-center items-center  w-full z-[60] opacity-80 max-h-[10px] sm:max-h-[100px] pt-10 "
       // style={{ backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.1)" : "black" }}
     >
       <div className="flex  gap-2 justify-center  items-center w-[240px] sm:w-full hiddenn ">
-        <a className="eye  " href="#">
+        <a className="  " href="#">
          
-          <img className="eye hiddenn max-w-[428px] " src="./cachi.png" alt="INICIO" />
+          <img className=" hiddenn w-[236px] sm:w-[428px] " src="./cachi.png" alt="INICIO" />
         </a>
       </div>
       <div className="flex gap-2 ">
