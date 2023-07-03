@@ -3,7 +3,7 @@ import React from 'react'
 function AboutMe() {
   return (
     <div className='bg-black sm:p-16'>
-      <h1 className='text-white text-4xl sobre_mi'>Sobre Mi</h1>
+      <h1 className='text-white text-4xl sobre_mi'>Bio</h1>
         <p className='text-white p-6 pt-1'>
         Carla Giuliani egresada de la carrera de Diseño de Imagen y Sonido de la Universidad de Buenos Aires (UBA) y oriunda de la ciudad de San Fernando desarrolla su carrera en el ámbito audiovisual como realizadora, editora y coordinadora de postproducción. En algunas ocasiones también se desempeña como continuista y asistente de dirección. <br /> <br />
 En mayo de 2018, se estrena su primer largometraje como editora titulado "El Corte". La película que surge como tesis de su carrera se proyecta en Cine Gaumont logrando permanencia en pantalla durante dos semanas. Así mismo, recorre varias salas del espacio INCAA como San Justo, La Matanza y Morón. <br /> <br />

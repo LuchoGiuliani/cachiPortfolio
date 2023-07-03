@@ -15,36 +15,11 @@
 
 </head>
 
-<body class="body">
+<body class=" body">
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/Observer.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-  <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
 
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-    // Smooth scroll setup
-    const bodyScrollBar = Scrollbar.init(document.body, { damping: 0.03, delegateTo: document });
-
-    bodyScrollBar.setPosition(0, 0);
-    bodyScrollBar.track.xAxis.element.remove();
-    console.log(bodyScrollBar);
-
-
-    ScrollTrigger.scrollerProxy("body", {
-      scrollTop(value) {
-        if (arguments.length) {
-          bodyScrollBar.scrollTop = value;
-        }
-        return bodyScrollBar.scrollTop;
-      }
-    });
-  </script>
+  
 </body>
 
 </html>
