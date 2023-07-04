@@ -30,8 +30,7 @@ function Horizontal() {
         ease: "none",
         
         scrollTrigger: {
-          trigger: container,
-         
+          trigger: container,         
           pin: true,  
           scrub: 1,
           snap: 1 / (paneles.length - 1),
@@ -49,13 +48,13 @@ function Horizontal() {
       <div className="container" ref={main}>
         
 
-        <section className="panel flex justify-center items-center bg-red-200">
+        <section className="panel flex justify-center items-center bg-black">
           <img  className="w-[360px] h-[360px]" src="/CORPORE.jpg" alt="" />
         </section>
-        <section className="panel bg-green-800"> <img  className="w-[360px] h-[360px]" src="/foto-5.jpg" alt="" /></section>
-        <section className="panel bg-purple-500"> <img  className="w-[360px] h-[360px]" src="/MEMORIA.jpg" alt="" /></section>
-        <section className="panel  bg-slate-500"> <img  className="w-[360px] h-[360px]" src="/PAJARO.jpg" alt="" /></section>
-        <section className="panel bg-gray-800"> <img  className="w-[360px] h-[360px]" src="/COMPLEJO.jpg" alt="" /></section>
+        <section className="panel bg-white"> <img  className="w-[360px] h-[360px]" src="/foto-5.jpg" alt="" /></section>
+        <section className="panel bg-black"> <img  className="w-[360px] h-[360px]" src="/MEMORIA.jpg" alt="" /></section>
+        <section className="panel  bg-white"> <img  className="w-[360px] h-[360px]" src="/PAJARO.jpg" alt="" /></section>
+        <section className="panel bg-black"> <img  className="w-[360px] h-[360px]" src="/COMPLEJO.jpg" alt="" /></section>
       </div>
      
     </div>

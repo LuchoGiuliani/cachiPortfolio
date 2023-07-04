@@ -9,7 +9,7 @@ import Projects from "./components/Projects";
 import Fotos from "./components/Fotos";
 import Horizontal from "./components/Horizontal";
 import GridVideo from "./components/GridVideo";
-import Loader from "./components/Loader";
+
 import AboutMe from "./components/AboutMe";
 
 function App() {
