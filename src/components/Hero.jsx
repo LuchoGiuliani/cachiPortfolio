@@ -20,7 +20,7 @@ const Hero = () => {
 
   return (
     <div className="bg-black h-screen flex items-center justify-center">
-      {!videoLoaded && <div className="text-white">Loading</div>}
+      {!videoLoaded && <div className="text-white text-center sm:text-4x1">Loading</div>}
       <div className={`${videoLoaded ? "opacity-100" : "opacity-0"} transition-opacity duration-500`}>
         <video
           id="videoHero"
