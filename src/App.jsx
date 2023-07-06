@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Fotos from "./components/Fotos";
 import Horizontal from "./components/Horizontal";
 import GridVideo from "./components/GridVideo";
 
@@ -34,7 +33,7 @@ function App() {
       <AboutMe />
       <Projects id="projects" className="" />
       <Footer className="" />
-      {/* <Fotos /> */}
+     
     </main>
   );
 }
