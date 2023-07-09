@@ -6,19 +6,19 @@ function GridVideo() {
       <div className="main_grid pb-[30px] ">
         <div className="grid_link">
           <img className="grid_image" src="./EL_CORTE.jpg" alt="Imagen El Corte" />
-          <span className="hover_text">El corte <br /> <h2 className="text-center font-thin">2018</h2></span>
+          <span className="hover_text">El Corte <br /> <h2 className="text-center font-thin">2018</h2></span>
           
           
           
         </div>
         <div className="grid_link">
           <img className="grid_image" src="./SALON_ROJO.jpg" alt=" Imagen Salon rojo" />
-          <span className="hover_text">Salón Rojo <br /> <h2 className="text-center font-thin">2022</h2></span>
+          <span className="hover_text">Salón Rojo <br /> <h2 className="text-center font-thin">2023</h2></span>
           
         </div>
         <div className="grid_link">
           <img className="grid_image" src="./CORPORE.jpg" alt="Imagen Corpore" />
-          <span className="hover_text">Córporea <br /> <h2 className="text-center font-thin">2023</h2></span>
+          <span className="hover_text">Corpórea <br /> <h2 className="text-center font-thin">2024</h2></span>
           
         </div>
         <div className="grid_link">
@@ -28,7 +28,7 @@ function GridVideo() {
         </div>
         <div className="grid_link">
           <img className="grid_image" src="./NOVENA.png" alt=" Imagen Novena" />
-          <span className="hover_text">Novena <br /> <h2 className="text-center font-thin">2023</h2></span>
+          <span className="hover_text">Novena <br /> <h2 className="text-center font-thin">2013</h2></span>
          
         </div>
         <div className="grid_link">

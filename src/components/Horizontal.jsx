@@ -1,6 +1,11 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useLayoutEffect } from "react";
+import ercdisis from "../assets/ercdisis.mp4"
+import sr from "../assets/sr.mp4";
+import cda from "../assets/cda.mp4" 
+import bvs from "../assets/bvs.mp4";
+import cabalas from "../assets/cabalas.mp4";
 
 gsap.registerPlugin(ScrollTrigger);
 function Horizontal() {
@@ -17,7 +22,7 @@ function Horizontal() {
           trigger: container,
           pin: true,
           scrub: 1,
-          snap: 1 / (paneles.length - 1),
+          // snap: 1 / (paneles.length - 1),
           end: "+=3500",
         },
       });
@@ -29,34 +34,24 @@ function Horizontal() {
     <div className=" overflow-hidden">
       <div className="container" ref={main}>
         <section className="panel  justify-center items-center bg-stone-900">
-          <div className="bg-red-200 p-4 rounded-md">
+          <video loop muted autoPlay src={sr}></video>
+          {/* <div className="bg-red-200 p-4 rounded-md">
+            
           <h2>Corpore</h2>
           <img className="w-[360px] h-[360px]" src="/CORPORE.jpg" alt="" />
-          </div>
+          </div> */}
         </section>
         <section className="panel bg-white">
-          <div className="bg-green-200 p-4 rounded-md">
-        <h2>Foto</h2>
-          <img className="w-[360px] h-[360px]" src="/foto-5.jpg" alt="" />
-        </div>
+        <video loop muted autoPlay src={ercdisis}></video>
         </section>
         <section className="panel bg-black">
-          <div className="bg-yellow-200 p-4 rounded-md">
-        <h2>Memoria</h2>       
-          <img className="w-[360px] h-[360px]" src="/MEMORIA.jpg" alt="" />
-          </div>
+        <video loop muted autoPlay src={cda}></video>
         </section>
         <section className="panel  bg-white">
-        <div className="bg-gray-200 p-4 rounded-md">
-         <h2>Pájaro</h2>
-          <img className="w-[360px] h-[360px]" src="/PAJARO.jpg" alt="" />
-          </div>       
+        <video loop muted autoPlay src={bvs}></video>
         </section>
         <section className="panel bg-stone-900">
-          <div className="bg-purple-300 p-4 rounded-md">
-         <h2>Complejo</h2>
-          <img className="w-[360px] h-[360px]" src="/COMPLEJO.jpg" alt="" />
-          </div>
+        <video loop muted autoPlay src={cabalas}></video>
         </section>
       </div>
     </div>

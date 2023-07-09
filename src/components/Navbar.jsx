@@ -42,7 +42,7 @@ function Navbar() {
 
   return (
     <div
-      className="flex  fixed justify-center items-center  w-full z-[60] opacity-80 max-h-[10px] pt-16 sm:max-h-[100px] "
+      className="flex  fixed justify-center items-center  w-full z-[60] opacity-80 max-h-[10px] pt-4 sm:max-h-[100px] "
       // style={{ backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.1)" : "black" }}
     >
       

@@ -25,13 +25,13 @@ function App() {
   // }
 
   return (
-    <main className="App  ">
+    <main className="App">
       <Navbar className="" />
       <Hero />
       <GridVideo className="" />
       <Horizontal />
       <AboutMe />
-      <Projects id="projects" className="" />
+      {/* <Projects id="projects" className="" /> */}
       <Footer className="" />
      
     </main>
