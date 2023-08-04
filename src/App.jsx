@@ -32,7 +32,7 @@ function App() {
       <Horizontal />
       <AboutMe />
       {/* <Projects id="projects" className="" /> */}
-      <Footer className="" />
+      {/* <Footer className="" /> */}
      
     </main>
   );

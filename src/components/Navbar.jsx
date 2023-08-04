@@ -1,57 +1,61 @@
-import React, { useState, useEffect } from "react";
-import Typewriter from "typewriter-effect";
-import { useTypewriter } from "react-simple-typewriter";
+import React, { useRef, useState, useEffect, useLayoutEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faYoutube,
+  faGoogle,
+  faLinkedin,
+  faWhatsapp
+} from "@fortawesome/free-brands-svg-icons";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const pinn = useRef();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+  // useLayoutEffect(() => {
+  //   const  titles = document.querySelectorAll(".title")
+  //   const ctx = gsap.context(() => {
+  //     console.log(titles);
+  //       gsap.to(titles, {
+  //           scrollTrigger: {
+  //             trigger: ".container_title",
+  //             start: "top top ",
+  //             end: "bottom 10%",
+  //             pin: titles,
+  //             toggleActions: "restart none none",
+  //             scrub: 4,
 
-    window.addEventListener("scroll", handleScroll);
+  //           },
+  //         }),
+  //         gsap.to(titles, {
+  //           scrollTrigger: {
+  //             trigger: ".container_title",
+  //             start: "top top ",
+  //             end: "bottom 10%",
+  //             pin: ".title2",
+  //             duration:2,
+  //             toggleActions: "restart none none",
+  //             scrub: 4,
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //           },
+  //         });
+  //       }, pinn);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        } else {
-          entry.target.classList.remove("show");
-        }
-      });
-    });
-
-    const hiddenElements = document.querySelectorAll(".hiddenn");
-    hiddenElements.forEach((element) => {
-      observer.observe(element);
-    });
-  }, []);
+  //       // then later
+  //     return () => ctx.revert();
+  //   })
 
   return (
-    <div
-      className="flex  fixed justify-center items-center  w-full z-[60] opacity-80 max-h-[10px] pt-4 sm:max-h-[100px] "
-      // style={{ backgroundColor: isScrolled ? "rgba(0, 0, 0, 0.1)" : "black" }}
-    >
-      
-        <a className="  " href="#">
-          <img className=" hiddenn w-[236px] sm:w-[428px] " src="./cachi.png" alt="INICIO" />
-        </a>
-      
-      
-    </div>
+    <div className="flex justify-between gap-3 p-2 mb-2 opacity-70 rounded-xl fixed sm:mx-6 items-center z-10 container_title bottom-0 max-h-12 bg-black left-1/2 transform -translate-x-1/2">
+    <h1 className=" text-white text-center p-2">Carla Giuliani</h1>
+    <a target="_blank"  href="https://www.youtube.com/@cachideviaje/videos"> <FontAwesomeIcon className="text-white" icon={faYoutube} /></a>
+    <a target="_blank"  href="mailto:cachicorreo@gmail.com"> <FontAwesomeIcon  className="text-white" icon={faGoogle} /></a>
+    <a target="_blank" href="https://www.linkedin.com/in/cachi-giuliani-audiovisual/ "> <FontAwesomeIcon  className="text-white" icon={faLinkedin} /></a>
+    <a target="_blank"  href="/twitter"> <FontAwesomeIcon  className="text-white" icon={faWhatsapp} /></a>
+    <h1 className=" text-white p-2 text-center ">Diseño Audiovisual</h1>
+  </div>
   );
 }
 

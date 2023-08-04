@@ -42,10 +42,12 @@ function Horizontal() {
           </div> */}
         </section>
         <section className="panel bg-white">
-        <video loop muted autoPlay src={ercdisis}></video>
+       
+        <video loop muted autoPlay src={cda}></video>
         </section>
         <section className="panel bg-black">
-        <video loop muted autoPlay src={cda}></video>
+        <video loop muted autoPlay src={ercdisis}></video>
+     
         </section>
         <section className="panel  bg-white">
         <video loop muted autoPlay src={bvs}></video>
