@@ -230,3 +230,9 @@ h1 {
     white-space: nowrap;
     height: 100vh;
 }
+
+@media (min-width: 498px) {
+  .container {
+    height: 50%;
+  }
+}
